@@ -7,7 +7,7 @@ public class TCPClient {
         int port = 5000;
 
         try (Socket socket = new Socket(hostname, port)) {
-            // إرسال رسالة إنجليزية للخادم
+            // إرسال رسالة للخادم
             PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
             output.println("Hello Server, this is a test message from the Client!");
 
@@ -22,3 +22,4 @@ public class TCPClient {
         // java TCPClient.java
     }
 }
+
